@@ -1,0 +1,51 @@
+
+<script>
+let person = false;
+let max = false;
+let min = false;
+let countGuess = 0;
+
+if(!person){
+person = prompt("Welkom! Wat is je naam?", "");
+alert("Hey " + person);
+}
+if(!min){
+  min = prompt("Wat is het kleinste getal waarmee u wilt spellen", "");
+}
+if(!max){
+  max = prompt("Wat is het grootste  getal waarmee u wilt spellen", "");
+}
+function getRandomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    
+}
+
+
+let goodnumber = getRandomNumber(min, max);
+console.log(goodnumber);
+
+
+
+function guess(goodnumber) {
+  countGuess++;
+  var attempts = 5 - countGuess;
+  if(attempts>=0){
+    var guess_number = prompt("Voer een nummer in van "+min+" tot "+max+" om te beginnen met raden", "");
+      if (guess_number == goodnumber) {
+        alert('Gefeliciteerd je hebt gewonnen. (In '+countGuess+' keer raden)');
+        alert("Dag " + person);
+      }else{
+        
+        
+          alert('Dat is niet correct Je heb nog '+attempts+' over');
+          guess(goodnumber);
+          
+      }
+  }else{alert('helaas bent je af, je kan nu niet meer raden'); }
+}
+
+
+guess(goodnumber);
+</script>

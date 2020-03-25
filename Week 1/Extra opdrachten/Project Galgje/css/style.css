@@ -1,0 +1,45 @@
+*{
+    font-family: sans-serif;
+}
+
+#lines{
+font-size: 25px;
+}
+#levels{
+    margin: 25px;
+    color:#ccc;
+
+}
+button{
+    margin:2px;
+    line-height: 30px;
+    width: 100px;
+}
+input{
+    line-height: 20px;
+    padding: 10px;
+
+}
+#guess{
+    background-color: aquamarine;
+    border-color: aquamarine;
+    border-radius: 20px;
+}
+
+#restart{
+    background-color: brown;
+    border-color: brown;
+    border-radius: 20px;
+    color:#fff;
+}
+.inputFeeld{
+    height: 75px;
+    border-radius: 20px;
+    background-color: #efefef;
+    padding: 50px;
+    margin: 10%;
+}
+body{
+    text-align: center;
+
+}

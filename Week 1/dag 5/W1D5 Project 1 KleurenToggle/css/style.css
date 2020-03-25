@@ -1,0 +1,50 @@
+*{
+    color:#020202;
+    font-family: cursive;
+}
+ul{
+
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0px;
+    width: 200px;
+    height: 0px;
+    transition: 1s;
+    overflow: hidden;
+}
+ul.show {
+  top: initial;
+  bottom: 0;
+  height:250px;
+  transition:height 1s;
+}
+ul div{
+    width: 12%;
+    display: inline-block;
+}
+
+li{
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;  
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+}
+
+img {
+    cursor: pointer;
+}
+
+#colorName{
+    position: absolute;
+    left :45%;
+    top:45%;
+    font-size: 26px;
+}
+
+#compleetMenu{
+    height: 600px;
+    width: 200px;
+    z-index: 1000;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+    </head>
+  
+<body>
+
+    <label>Welkom bij de Winc Filmzoeker</label>
+        <ul id='filters'>
+            <li><input type='radio' name='filter' value='NewReleases'/>Nieuwste </li> 
+            <li><input type='radio' name='filter' value='Avengers'/>Avengers</li> 
+            <li><input type='radio' name='filter' value='X-Men'/>X-Men</li> 
+            <li><input type='radio' name='filter' value='Princess'/>Princess</li> 
+            <li><input type='radio' name='filter' value='Batman'/>Batman</li> 
+            <li><input type='text' id='search' /></li>
+        </ul>
+
+
+    <div id='container'></div>
+
+    <script defer src='js/db.js'></script>
+    <script defer src='js/functions.js'></script>
+    <script defer src='js/main.js'></script>
+</body>
+</html>

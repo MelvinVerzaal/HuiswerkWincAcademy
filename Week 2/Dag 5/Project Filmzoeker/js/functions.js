@@ -26,7 +26,6 @@ function filterClicked(filter){
     }
 }
 
-
 function filterSearch(){
     document.getElementById('container').innerHTML ='';
         for (i=0; i<=movies.length; i++) {

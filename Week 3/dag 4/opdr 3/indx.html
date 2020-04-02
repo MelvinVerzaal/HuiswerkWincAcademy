@@ -1,24 +1,27 @@
+<html>
+<head>
 
 
+</head>
+<body>
     <script>
-if(confirm("grap zien?")== true){
+if(confirm("Wil jij grap zien (en beloof jij te laggen, zo niet dan krijg je ook grap niet te zien. Grappemakker, aaawh je lagt al een beetje mooizo, klik nu maar zel op ok anders blijft de grap niet grappig)?")== true){
 
 
 
-    let url = "https://icanhazdadjoke.com/";
+    let url = "https://icanhazdadjoke.com/slack";
     
     fetch(url)
     .then((response) => {
-        return response.json();
+        return response.json()
     })  
     .then((data) => {
-     
-       console.log(data);
-    });
+        document.body.innerhtml = data.attachments[0].text;
+    })  
+ 
 
 }
 
-
-
-
     </script>
+    </body>
+</html>

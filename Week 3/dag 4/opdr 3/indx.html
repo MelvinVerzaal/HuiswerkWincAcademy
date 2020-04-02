@@ -1,0 +1,24 @@
+
+
+    <script>
+if(confirm("grap zien?")== true){
+
+
+
+    let url = "https://icanhazdadjoke.com/";
+    
+    fetch(url)
+    .then((response) => {
+        return response.json();
+    })  
+    .then((data) => {
+     
+       console.log(data);
+    });
+
+}
+
+
+
+
+    </script>

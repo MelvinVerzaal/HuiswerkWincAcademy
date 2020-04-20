@@ -4,13 +4,12 @@ import React from "react"
 function list(){
 
     return(
-        <lu>
-            <li>wcpapier</li>
-            <li>wcpapier</li>
-            <li>wcpapier</li>
-            <li>wcpapier</li>
-            <li>wcpapier</li>    
-        </lu>
+<div className='list'>
+    <h1>Counter {counter}</h1>
+    <button>+</button>
+    <button>-</button>
+</div>
+
     )
 
 }
